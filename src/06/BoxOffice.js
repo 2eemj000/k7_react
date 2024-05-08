@@ -4,7 +4,7 @@ export default function BoxOffice() {
     // console.log(box.boxOfficeResult.dailyBoxOfficeList);
     const dailyList = box.boxOfficeResult.dailyBoxOfficeList ;
     const tags = dailyList.map(item => 
-                                <li key={item.movieCd} className="text-blue-700">
+                                <li key={item.movieCd}>
                                     [{item.rank}위] : {item.movieNm}
                                     </li>) ;
   return (
