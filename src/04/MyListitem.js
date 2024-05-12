@@ -36,7 +36,7 @@ export default function MyListitem({title, imgUrl, content}) {
   // ~ [1] 컴포넌트 생성시 최초 한번만 실행 (deps에 빈배열)
   useEffect(()=>{
     console.log(title,'생성');
-  });
+  }, []);
 
   // ~ [2] state변수가 변경 (지정한 값이 업데이트될 때 useEffect 실행)
   useEffect(()=>{
