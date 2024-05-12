@@ -34,6 +34,7 @@ export default function MyDiv() {
                       flex justify-end items-center">
       <span className="inline-flex p-1 mx-2" onClick={handleCount}> 
       {/* mx는 좌우만 */}
+      {/* 아이콘은 window+. */}
         💗
       </span>
       <span>

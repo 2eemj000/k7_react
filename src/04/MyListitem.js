@@ -1,7 +1,7 @@
 // function 함수명(){return} 형태
 // useState는 변수값을 바꾸기 위해 두개의 값을 제어함 (cnt,setCnt), setCnt는 cnt에 값을 할당하는 세터, 0은 초기값
 
-// HOOK : useEffect # 방법알기 1~4
+// HOOK : useEffect # 방법알기 1~2
 // # useEffect 1. useEffect 적어줌
 import { useState, useEffect } from "react"
 export default function MyListitem({title, imgUrl, content}) {

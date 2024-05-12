@@ -10,9 +10,9 @@ import FoodMain from './07/FoodMain';
 function App() {
   return (
     <div className="flex flex-col w-full max-w-screen-lg h-screen overflow-y-auto mx-auto">
-      <header className='flex justify-between items-center text-xl font-bold h-20 p-10 bg-slate-200'>
+      <header className='flex justify-between items-center text-xl font-bold h-20 p-10 bg-blue-100'>
         <p>리액트 실습</p> 
-        <p><RiHomeHeartFill className='text-3xl text-yellow-900'/></p>
+        <p><RiHomeHeartFill className='text-3xl text-orange-500'/></p>
       </header>
       <main className='grow flex justify-center items-center'>
         {/* <MyDiv /> */}
@@ -22,7 +22,7 @@ function App() {
         {/* <MyClock /> */}
         <FoodMain />
       </main>
-      <footer className='flex justify-center items-center h-20 bg-black text-slate-100'>
+      <footer className='flex justify-center items-center h-20 bg-yellow-900 text-slate-100'>
       ⓒ Lee Min Ju , K-digital-7
       </footer>
     </div>
