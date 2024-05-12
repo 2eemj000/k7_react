@@ -23,7 +23,7 @@ export default function FoodMain() {
         // 골라내야 하니까 map이 아니라 filter써야함
         let tm = fooddata.filter( (item) => item["운영주체 분류"] === c)
                          .map(item=><FoodCard data={item} key={item["사업장명"]}/>)
-        // 버튼을 누르면 setC1List가 바뀜
+        // 버튼을 누르면 setC1List가 바뀜 !
         setC1List(tm);
     }
     const clBts = c1.map(item=>
