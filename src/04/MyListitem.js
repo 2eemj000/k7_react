@@ -1,7 +1,9 @@
 // function 함수명(){return} 형태
 // useState는 변수값을 바꾸기 위해 두개의 값을 제어함 (cnt,setCnt), setCnt는 cnt에 값을 할당하는 세터, 0은 초기값
 
-// HOOK : useEffect # 방법알기 1~4
+// 리액트에서는 하나의 컴포넌트에서 다른 컴포넌트로 (부모 컴포넌트에서 자식 컴포넌트(들)로)데이터를 전달할 때 props를 사용
+
+// HOOK : useEffect # 방법알기 1~2
 // # useEffect 1. useEffect 적어줌
 import { useState, useEffect } from "react"
 export default function MyListitem({title, imgUrl, content}) {
@@ -19,17 +21,29 @@ export default function MyListitem({title, imgUrl, content}) {
   // useEffect(()=>{});
   // useEffect(()=>{},[]);
 
-  // ~ [1] 컴포넌트 생성시 최초 한번만 실행
+  // useEffect(()=>{
+  //   // mount
+  //   컴포넌트가 생길 때 수행 작업
+  //   return{ // cleanup
+  //   // unmount
+  //   컴포넌트가 사라질 때 수행 작업
+  //   }
+  // },[deps 의존되는 값들]);
+
+  // deps 의존되는 값들이 비어있다면 컴포넌트가 처음 화면에 나타날 때만 useEffect에 등록한 함수가 실행
+  // deps 배열에다 어떤 값을 넣게 된다면 해당 값이 바뀔 때마다 등록한 함수가 호출
+
+  // ~ [1] 컴포넌트 생성시 최초 한번만 실행 (deps에 빈배열)
   useEffect(()=>{
     console.log(title,'생성');
-  });
+  }, []);
 
-  // ~ [2] state변수가 변경
+  // ~ [2] state변수가 변경 (지정한 값이 업데이트될 때 useEffect 실행)
   useEffect(()=>{
     console.log(title,'변경 cnt =', cnt);
   },[cnt]);
 
-  // ~ [3] 컴포넌트가 변경되면 항상 실행
+  // ~ [3] 컴포넌트가 변경되면 항상 실행 (리렌더링 될 때마다 호출)
   useEffect(()=>{
     console.log(title,'변경됨');
   });
