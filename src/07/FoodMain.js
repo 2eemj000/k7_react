@@ -35,7 +35,6 @@ export default function FoodMain() {
    
    // const data = fooddata.map(item=>item); -> 필요없음
     
-
   return (
     <div className='flex flex-col w-full h-full justify-start items-center'>
         <div className='w-full grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-4 my-5 px-2 justify-between items-center'>
