@@ -32,11 +32,8 @@ export default function FoodMain() {
                         bcolor={'blue'}
                         handleClick={()=>{handleC1(item)}}/>
     )
-<<<<<<< HEAD
    
-=======
    // const data = fooddata.map(item=>item); -> 필요없음
->>>>>>> 086f4df16ea27252be60b055c2f103f711aec538
     
 
   return (
