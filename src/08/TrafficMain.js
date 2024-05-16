@@ -70,6 +70,7 @@ export default function TrafficMain() {
     useEffect(()=>{
         if (!c1) return ;
         console.log('c1=',c1)
+        // ButtonC의 probes이름 다 받아야함
         let tm = c1.map((item)=><ButtonC caption={item}
                                         key ={item}
                                         bcolor={'blue'}
@@ -108,7 +109,7 @@ export default function TrafficMain() {
         tm=tm[0];
         console.log('상세 :',tm)
         setInfo(tm['사고건수']) // object로 풀리도록
-    },[c2Sel])
+    },[c2Sel]);
 
     return (
     <div className='flex flex-col w-10/12 h-full justify-start items-start m-5 p-5'>
