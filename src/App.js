@@ -6,11 +6,12 @@ import { RiHomeHeartFill } from "react-icons/ri";
 // import MyList from './04/MyList';
 // import Lotto from './05/Lotto';
 // import BoxOffice from './06/BoxOffice';
+import Gallery from './10/Gallery';
 // import FoodMain from './07/FoodMain';
 // import TrafficMain from './08/TrafficMain';
 // import TrafficNav from './08_1/TrafficNav';
 // import Traffic from './08_1/Traffic';
-import MyRef from './09/MyRef';
+// import MyRef from './09/MyRef';
 function App() {
   return (
     <div className="flex flex-col w-full max-w-screen-lg h-screen overflow-y-auto mx-auto">
@@ -28,7 +29,8 @@ function App() {
         {/* <TrafficMain/> */}
         {/* <TrafficNav/>*/}
         {/* <Traffic/> */}
-        <MyRef/>
+        {/* <MyRef/> */}
+        <Gallery/>
       </main>
       <footer className='flex justify-center items-center h-20 bg-yellow-900 text-slate-100'>
       ⓒ Lee Min Ju , K-digital-7

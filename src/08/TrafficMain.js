@@ -4,7 +4,7 @@
 // [2. 외부에서 노출이 안되도록 환경변수 설정하기]
 // url 너무 길면 잘라서 백틱문자열로 표현가능
 // 최상위루트에 .env파일 만들기
-// .env 파일에 serviceKey명 = '~' 복붙 & .gitignore 파일에 .env 파일추가
+// .env 파일에 serviceKey명 = '~' 복붙 , crtlC/다시실행 & .gitignore 파일에 .env 파일추가
 // 환경변수명은 반드시 REACT_APP_으로 시작
 // serviceKey 가져오려면 process.env.서비스키명
 
