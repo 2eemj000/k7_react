@@ -21,11 +21,11 @@ export default function Festival() {
         console.log(selRef.current.value)
         let tm = festival.filter(item=>item.GUGUN_NM===selRef.current.value)
                     // tm은 전체 데이터인 festival을 돌아야함
-                    .map(item=><GalleryCard     key={item.TITLE}
-                                                imgUrl={item.MAIN_IMG_THUMB}
-                                                title={item.MAIN_TITLE}
-                                                content={item.ADDR1}
-                                                spTag={item.HOMEPAGE_URL}/>)
+                         .map(item=><GalleryCard key={item.TITLE}
+                                                 imgUrl={item.MAIN_IMG_THUMB}
+                                                 title={item.MAIN_TITLE}
+                                                 content={item.ADDR1}
+                                                 spTag={item.HOMEPAGE_URL}/>)
         setCards(tm)
     }
     useEffect(()=>{
