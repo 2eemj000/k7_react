@@ -75,7 +75,6 @@ export default function Gallery() {
                         ref={inRef} type="text" id="txt1" name="txt1" required/>
             </div>
             <div>
- 
               <ButtonC caption="검색"
                        bcolor="blue"
                        handleClick={handleOK} />
