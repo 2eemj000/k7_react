@@ -46,7 +46,7 @@ export default function Festival() {
     
   return (
     <div className="w-full h-full flex flex-col justify-start items-start">
-        <div className="w-full flex flex-cols-1 md:grid-cols-2 my-5">
+        <div className="w-full flex flex-cols-1 md:grid-cols-2 my-5 p-3">
         <label htmlFor="op" 
                  className="w-4/5 block text-xl font-bold
                             justify-center items-center mr-5
