@@ -66,15 +66,15 @@ export default function Gallery() {
 },[gallery])
   return (
     <div className="w-full h-full flex flex-col  justify-start items-start">
-        <div className="w-full flex justify-center items-center m-5">
+        <div className="w-full flex justify-center items-center m-5 gap-5">
          {/* 키워드를 입력받아서 해당내용이 나오도록 -> Ref변수 */}
             <div>
               <input className="border-gray-300 inline-flex px-10 py-3 
                         rounded-md justify-center items-center
-                        text-black font-bold" 
+                        text-black font-bold bg-gray-50 border" 
                         ref={inRef} type="text" id="txt1" name="txt1" required/>
             </div>
-            <div>
+            <div className="m-2 gap-3">
               <ButtonC caption="검색"
                        bcolor="blue"
                        handleClick={handleOK} />

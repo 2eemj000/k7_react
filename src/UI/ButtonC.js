@@ -15,7 +15,7 @@ export default function ButtonC({caption, bcolor, handleClick}) {
     return (
     <button className={`inline-flex px-10 py-3 
                         rounded-md justify-center items-center
-                        text-white font-bold
+                        text-white font-bold m-2
                         ${colorB[bcolor]} ${colorBHover[bcolor]}`}
                         onClick={handleClick}>
       {caption}
