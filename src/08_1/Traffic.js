@@ -7,6 +7,8 @@ export default function Traffic() {
     const [c2,setC2] = useState(); // 중분류데이터
     const [selC2, setSelC2] = useState(); // 선택된 중분류데이터
     const [info,setInfo] = useState(); // 상세정보
+ 
+
     
     // getFetchData라는 함수 만듦 
     const getFetchData = (a)=>{
