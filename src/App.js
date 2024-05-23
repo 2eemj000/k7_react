@@ -42,9 +42,9 @@ function App() {
           <li className='bg-blue-400 hover:bg-orange-400 px-5 py-3 
                         rounded-md justify-center items-center
                         text-white font-bold text-sm'><Link to="/Festival">Festival</Link></li>
-          <li className='bg-blue-600 hover:bg-orange-400 px-5 py-3 
+          <li className='bg-blue-600 hover:bg-orange-600 px-5 py-3 
                         rounded-md justify-center items-center
-                        text-white font-bold text-sm'><Link to="/frcst">단기예보</Link></li>
+                        text-white font-bold text-sm'><Link to="/frcst">Forecast</Link></li>
         </ul>
         {/* <p><RiHomeHeartFill className='text-3xl text-orange-500'/></p> */}
       </header>
