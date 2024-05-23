@@ -13,7 +13,7 @@ export default function Frcst() {
   const [area, setArea] = useState()
   const navigate = useNavigate()
 
-  // 컴포넌트 생성 시
+  // 컴포넌트 생성 시 (selectbox에 지역이 다 나오도록)
   useEffect(()=>{
     let tm = getxy.map(item=>item["1단계"])
     setOps(tm);

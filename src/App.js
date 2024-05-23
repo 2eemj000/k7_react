@@ -9,9 +9,8 @@ import FoodMain from './07/FoodMain';
 import Traffic from './08_1/Traffic';
 import Gallery from './10/Gallery';
 import Festival from './11/Festival';
-import ButtonC from './UI/ButtonC';
 import Frcst from './13/Frcst';
-// 경로정보를 등록해놔야 함 , Route
+// FrcstList처럼 이 페이지에서 안쓰더라도 전체 경로정보를 등록해놔야 함 , Route
 import FrcstList from './13/FrcstList';
 
 function App() {
@@ -58,7 +57,8 @@ function App() {
           <Route path="/Gallery" element={<Gallery />}/>
           <Route path="/Festival" element={<Festival />}/>
           <Route path="/frcst" element={<Frcst/>}/>
-          <Route path="/frcstlt" element={<FrcstList/>}/>
+          {/* 경로정보를 등록해놔야 함 , Route */}
+          <Route path="/frcstlt" element={<FrcstList/>}/> 
         </Routes>
       </main>
       <footer className='flex justify-center items-center h-20 bg-yellow-900 text-slate-100'>
