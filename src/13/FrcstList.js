@@ -19,7 +19,9 @@ export default function FrcstList() {
   const [tags, setTags] = useState() // 화면 tr 생성
   // ref 변수
   const selRef = useRef()
-
+  // 코드 변수 (0코드값 이런식으로 나오는거 해결하려고)
+  const sky = {"1":"☀ (맑음)", "3":"☁ (흐림)", "4":"🌥 (구름많음)"}
+  const pty = {"0":"없음", "1":"비", "2":"비/눈", "3":"눈", "4":"소나기", "5":"빗방울", "6":"빗방울눈날림", "7":"눈날림"}
 
   // 항목 선택
   const getFetchData = (url)=>{
@@ -78,7 +80,12 @@ export default function FrcstList() {
                       <th scope="col" className="px-6 py-3">{selItem["항목명"]}</th>
                       <th scope="col" className="px-6 py-3">{item["fcstDate"]}</th>
                       <th scope="col" className="px-6 py-3">{item["fcstTime"]}</th>
-                      <th scope="col" className="px-6 py-3">{item["fcstValue"]}{selItem["단위"]}</th>
+                      <th scope="col" className="px-6 py-3">
+                        {item["category"]==='SKY'
+                        ?sky[item["fcstValue"]]
+                        :item["category"]==='PTY'
+                        ?pty[item["fcstValue"]]
+                        :`${item["fcstValue"]}${selItem["단위"]}`}</th>
                   </tr>)
   console.log("tdata filter",tm)
   setTags(tm)
