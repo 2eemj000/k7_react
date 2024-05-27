@@ -25,6 +25,6 @@ export default function GalleryCard({imgUrl,title,content,spTag}) {
         <p className="mb-3 font-normal text-gray-700">{content}</p>
         <div>{spTags}</div>
     </div>
-</div>
+    </div>
   )
 }

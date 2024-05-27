@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 export default function Rest() {
-  const [tdata, setTdata] = useState()
+  const [tdata, setTdata] = useState([])
   const [tags, setTags] = useState()
 
   const getFetchData = async(url)=>{
@@ -10,9 +10,9 @@ export default function Rest() {
     setTdata(data)
   }
 
-  useEffect(()=>{
-    console.log(tdata)
-  },[tdata])
+  // useEffect(()=>{
+  //   console.log(tdata)
+  // },[tdata])
 
   useEffect(()=>{
     let url = `http://localhost:3005/posts`
@@ -20,13 +20,20 @@ export default function Rest() {
     },[])
   useEffect(()=>{
     if (!tdata) return;
-    let tm = tdata.map(item=>item.title)
+    let tm = tdata.map(item=>
+      <div key={item.id} className="flex bg-orange-200 hover:bg-orange-400 gap-2 m-3 justify-start items-center rounded-md">
+        <li className="whitespace-nowrap px-6 py-3 font-medium">[{item.id}]</li>
+        <li className="whitespace-nowrap px-6 py-3 font-medium">{item.title}</li>
+        <li className="whitespace-nowrap px-6 py-3">-- author : {item.author}</li>
+      </div>
+    )
     setTags(tm)
   },[tdata])
   return (
-    <div>
-      Rest
+    <div className="w-full grid m-2 p-2 gap-5">
+      <ul>
       {tags}
+      </ul>
     </div>
   )
 }

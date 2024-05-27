@@ -22,25 +22,25 @@ function App() {
       <header className='flex justify-between items-center text-xl font-bold h-20 p-10 bg-blue-100'>
         <p>리액트 실습</p> 
         <ul className='flex justify-center items-center gap-2'>
-          <li className='bg-blue-400 hover:bg-orange-400 px-5 py-3 
+          <li className='bg-blue-400 hover:bg-orange-400 px-3 py-3 
                         rounded-md justify-center items-center
                         text-white font-bold text-sm'><Link to="/MyClock">MyClock</Link></li>
-          <li className='bg-blue-600 hover:bg-orange-600 px-5 py-3 
+          <li className='bg-blue-600 hover:bg-orange-600 px-3 py-3 
                         rounded-md justify-center items-center
                         text-white font-bold text-sm'><Link to="/Lotto">Lotto</Link></li>
-          <li className='bg-blue-400 hover:bg-orange-400 px-5 py-3 
+          <li className='bg-blue-400 hover:bg-orange-400 px-3 py-3 
                         rounded-md justify-center items-center
                         text-white font-bold text-sm'><Link to="/BoxOffice">BoxOffice</Link></li>
-          <li className='bg-blue-600 hover:bg-orange-600 px-5 py-3 
+          <li className='bg-blue-600 hover:bg-orange-600 px-3 py-3 
                         rounded-md justify-center items-center
                         text-white font-bold text-sm'><Link to="/FoodMain">FoodMain</Link></li>
-          <li className='bg-blue-400 hover:bg-orange-400 px-5 py-3 
+          <li className='bg-blue-400 hover:bg-orange-400 px-3 py-3 
                         rounded-md justify-center items-center
                         text-white font-bold text-sm'><Link to="/Traffic">Traffic</Link></li>
-          <li className='bg-blue-600 hover:bg-orange-600 px-5 py-3 
+          <li className='bg-blue-600 hover:bg-orange-600 px-3 py-3 
                         rounded-md justify-center items-center
                         text-white font-bold text-sm'><Link to="/Gallery">Gallery</Link></li>
-          <li className='bg-blue-400 hover:bg-orange-400 px-5 py-3 
+          <li className='bg-blue-400 hover:bg-orange-400 px-3 py-3 
                         rounded-md justify-center items-center
                         text-white font-bold text-sm'><Link to="/Festival">Festival</Link></li>
           <li className='bg-blue-600 hover:bg-orange-600 px-5 py-3 
