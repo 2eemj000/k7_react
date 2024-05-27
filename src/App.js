@@ -12,6 +12,8 @@ import Festival from './11/Festival';
 import Frcst from './13/Frcst';
 // FrcstList처럼 이 페이지에서 안쓰더라도 전체 경로정보를 등록해놔야 함 , Route
 import FrcstList from './13/FrcstList';
+import RecoilMain from './14/RecoilMain';
+import Rest from './15/Rest';
 
 function App() {
   return (
@@ -44,6 +46,12 @@ function App() {
           <li className='bg-blue-600 hover:bg-orange-600 px-5 py-3 
                         rounded-md justify-center items-center
                         text-white font-bold text-sm'><Link to="/frcst">Forecast</Link></li>
+          <li className='bg-blue-400 hover:bg-orange-400 px-5 py-3 
+                        rounded-md justify-center items-center
+                        text-white font-bold text-sm'><Link to="/Recoil">Recoil</Link></li> 
+          <li className='bg-blue-600 hover:bg-orange-600 px-5 py-3 
+                        rounded-md justify-center items-center
+                        text-white font-bold text-sm'><Link to="/Rest">RestFull</Link></li>                            
         </ul>
         {/* <p><RiHomeHeartFill className='text-3xl text-orange-500'/></p> */}
       </header>
@@ -59,6 +67,9 @@ function App() {
           <Route path="/frcst" element={<Frcst/>}/>
           {/* 경로정보를 등록해놔야 함 , Route */}
           <Route path="/frcstlt" element={<FrcstList/>}/> 
+          <Route path="/Recoil" element={<RecoilMain/>}/> 
+          <Route path="/Rest" element={<Rest/>}/> 
+
         </Routes>
       </main>
       <footer className='flex justify-center items-center h-20 bg-yellow-900 text-slate-100'>
