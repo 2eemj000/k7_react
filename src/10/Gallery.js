@@ -21,6 +21,7 @@ export default function Gallery() {
       inRef.current.focus();
       return;
     }
+
     let url = `https://apis.data.go.kr/B551011/PhotoGalleryService1/gallerySearchList1?`
     url = url + `serviceKey=${process.env.REACT_APP_API_KEY}&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=AppTest&arrange=A&`
     url = url + `keyword=${encodeURI(inRef.current.value)}&_type=json`
