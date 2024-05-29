@@ -69,7 +69,7 @@ export default function FrcstList() {
     console.log(tdata)
   },[tdata])
 
-  //selItem이 바뀌면
+  //selItem이 바뀌면 (setTags)
  useEffect(()=>{
   if (!selItem) return;
   console.log("selItem", selItem)
