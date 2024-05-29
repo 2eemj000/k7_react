@@ -69,7 +69,6 @@ function App() {
           <Route path="/frcstlt" element={<FrcstList/>}/> 
           <Route path="/Recoil" element={<RecoilMain/>}/> 
           <Route path="/Rest" element={<Rest/>}/> 
-
         </Routes>
       </main>
       <footer className='flex justify-center items-center h-20 bg-yellow-900 text-slate-100'>
