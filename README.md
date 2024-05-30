@@ -53,4 +53,4 @@
   - Tailwind CSS IntelliSense
 
 # 컴포넌트 생성
-대문자로 시작
+- 대문자로 시작
