@@ -32,7 +32,7 @@ export default function Frcst() {
       alert('날짜와 지역을 선택하시오!')
       return
     }
-    navigate(`/frcstlt?gubun=${gubun}&x=${x}&y=${y}&dt=${inRef.current.value.replaceAll('-','')}&area=${area}`)
+    navigate(`/frcstlt?gubun=${gubun}&x=${x}&y=${y}&dt=${inRef.current.value.replaceAll('-','')}&area=${area}`) // 링크바꾸기
   }
 
   return (
