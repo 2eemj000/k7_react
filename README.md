@@ -3,26 +3,39 @@
 # Vercel
 - https://k7-react-fawn.vercel.app/
 
-# React 기본설정 정리
-React Project 생성
+
+
+# React Project 생성
   - Node.js 설치 : https://nodejs.org/
   - npx create-react-app my-app
-tailwind css 설치
+# tailwind css 설치
   - npm install -D tailwindcss
   - Tailwind CSS 설정 파일 생성 : npx tailwindcss init
   - tailwind.config.js 파일 수정
-React Icon
+      /** @type {import('tailwindcss').Config} */
+      module.exports = {
+      content: ["./src/**/*.{js,jsx,ts,tsx}"],
+      theme: {
+         extend: {},
+      },
+      plugins: [],
+      }
+  - index.css 추가
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+# React Icon
   - npm install react-icons --save
-React Route
+# React Route
   - npm install react-router-dom
-Recoil 설치
+# Recoil 설치
   - npm install recoil
-환경변수 설정
+# 환경변수 설정
   - .env 만들기
   - .env 파일은 최상위 루트에 작성
   - 환경변수명은 반드시 REACT_APP_으로 시작
   - .env 파일 gitIgnore에 .env를 추가
-RESTful 테스팅
+# RESTful 테스팅
   1. 설치
   - npm install -g json-server
   2. 실행
@@ -35,6 +48,9 @@ RESTful 테스팅
       POST: 새로운 자원을 생성 (생성)
       PUT: 기존 자원을 업데이트 (갱신)
       DELETE: 자원을 삭제 (삭제)
-VS code Extention
+# VS code Extention
   - VS Code ES7 React/Redux/React-Native/JS snippets
   - Tailwind CSS IntelliSense
+
+# 컴포넌트 생성
+대문자로 시작
